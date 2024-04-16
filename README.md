@@ -94,3 +94,16 @@ In Rust, the concept of "static" is different from languages like Java. In Rust,
 
 
 #### Reflection Subscriber-2
+1. Have you explored things outside of the steps in the tutorial, for example: src/lib.rs? If not, explain why you did not do so. If yes, explain things that you have learned from those other parts of code.
+
+I personally did not explored things outside of the steps in the tutorial since I don't want to mess things up since I am still not too familliar with the Rust programming language. Maybe in my free time I will try to explore a bit more.
+
+
+2. Since you have completed the tutorial by now and have tried to test your notification system by spawning multiple instances of Receiver, explain how Observer pattern eases you to plug in more subscribers. How about spawning more than one instance of Main app, will it still be easy enough to add to the system?
+
+the Observer pattern allows us to easily add more subscribers (or "observers") to the system. When a new Receiver instance is created, it can be added to the list of observers that the Main app (or "subject") maintains. Whenever the state of the Main app changes, all the Receiver instances in the observer list are notified. This makes it easy to plug in more subscribers to the system, as all you need to do is create a new Receiver instance and add it to the observer list.
+
+
+3. Have you tried to make your own Tests, or enhance documentation on your Postman collection? If you have tried those features, tell us whether it is useful for your work (it can be your tutorial work or your Group Project).
+
+No, I personally have not yet tried to make my own tests or enchance my Postman collection. 
